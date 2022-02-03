@@ -1,3 +1,4 @@
+rm data/FINAL.txt
 rm data/$1_FINAL*
 #RUN AMASS
 docker run -v ${PWD}:/.config/amass/ caffix/amass enum -d $1 > data/"$1_domainsfound.txt"
